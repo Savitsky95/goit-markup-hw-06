@@ -49,39 +49,52 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <p>Leave your contacts and we will call you back</p>
+                    <p class="modal-headline">Leave your contacts and we will call you back</p>
                     <form name="signup_form" autocomplete="on" novalidate>
-                        <br>
-                        <label>
-                            Name
-                            <br>
-                            <input type="name" name="name" />
-                        </label>
-                        <br>
-                        <label>
-                            Phone
-                            <br>
-                            <input type="tel" name="phone_number" />
-                        </label>
-                        <br>
-                        <label>
-                            Email
-                            <br>
-                            <input type="email" name="email" />
-                        </label>
-                        <br>
-                        <label>
-                            Comment
-                            <br>
-                            <textarea name="comment" rows="5" placeholder="Text input"></textarea>
-                        </label>
-                        <br>
-                        <label>
-                            <input type="checkbox" name="privacy-policy" value="accept" />
-                            I accept the terms and conditions of the <a href="#">Privacy Policy</a>
-                        </label>
+                        <div>
+                            <p class="form-field">
+                                <label for="name" class="text-area">
+                                    Name
+                                </label>
+                                <input type="name" name="name" id="name" />
+                            </p>
 
-                        <button type="submit">Send</button>
+                            <p class="form-field">
+                                <label for="tel" class="text-area">
+                                    Phone
+                                </label>
+                                <input type="tel" name="phone_number" id="tel" />
+                            </p>
+
+                            <p class="form-field">
+                                <label for="email" class="text-area">
+                                    Email
+                                </label>
+                                <input type="email" name="email" id="email" />
+                            </p>
+
+
+                            <p class="form-field">
+                                <label for="comment" class="text-area">
+                                    Comment
+                                </label>
+                                <textarea name="comment" rows="6" placeholder="Text input" id="comment"></textarea>
+                            </p>
+
+
+                            <p class="check">
+                                <label class="modal-text">
+                                    <input type="checkbox" name="privacy-policy" value="accept" />
+                                    I accept the terms and conditions of the <a href="#" class="link-modal">Privacy
+                                        Policy</a>
+                                </label>
+                            </p>
+
+
+                            <button type="submit" class="send-button">
+                                <div class="send-container">Send</div>
+                            </button>
+                        </div>
                     </form>
                     <button type="button" class="close-bt-father" data-modal-close>
                         <img src="./icons.svg/close.svg" alt="close" class="close-bt">
