@@ -633,7 +633,7 @@ padding-bottom: 120px;
 .sm-item:focus {
     background-color: var(--svg-background);
 }
-.foot-ctnr {
+.foot-ctnr { position: relative;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -652,4 +652,64 @@ padding-bottom: 120px;
 }
 .footer-social-media {
     margin-left: 120px;
+    margin-right: 80px;
+}
+.footer-field {
+    display: block;
+    color: var(--background-color);
+    font-size: 700;
+    line-height: 1.5;
+}
+.footer-field input {
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+padding: 8px 16px;
+font-size: 12px;
+line-height: 2;
+}
+#footer-mail {
+    margin-top: 16px;
+    width: 264px;
+    height: 40px;
+}
+.btn-ctnr {
+    margin-left: 24px;
+    padding-top: 42px;
+
+}
+.ftr-hdln {
+    display: none;
+}
+.footer-button {
+    height: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    padding-left: 24px;
+    background-color: var(--button-color);
+    border-radius: 4px;
+    gap: 16px;
+    color: var(--background-color);
+    font-weight: 700;
+    line-height: 1.5;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: inherit;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button:focus,
+.footer-button:hover {
+    background-color: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--background-color);
 }
