@@ -113,31 +113,65 @@ nav {
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 }
+.form-container:focus-within > .form-svg {
+    background-color: var(--button-color);
+}
+.form-field:focus-within {
+    /* border: 1px solid var(--button-color); */
+    background-color: red;
+}
+.form-container {
+    position: relative;
+}
+.form-svg {
+    fill:var(--brand-color);
+    position: absolute;
+    bottom: 36px;
+    left: 19px;
+}
+.form-label {
+    position: absolute;
+    top: -19px;
+    left: 0;
+}
+.form-label {
+    margin-bottom: 26px;
+}
+
+.form-input + .form-label{
+    ;
+}
 .modal-text [type="checkbox"] {
 color: var(--button-color)
 }
 .form-field input::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
-#name {
+.form-input {
+    margin-bottom: 26px;
+    width: 360px;
+    height: 40px;
+    padding-left: 38px;
+}
+/* #name {
     margin-bottom: 8px;
     width: 360px;
     height: 40px;
 }
-#name:active {
+/* #name:active {
     border: 1px solid var(--button-color);
     border-radius: 4px;
-}
-#tel {
+} */
+/* #tel {
     margin-bottom: 8px;
     width: 360px;
     height: 40px;
-}
-#email {
+} */
+/* #email {
     margin-bottom: 8px;
     width: 360px;
     height: 40px;
-}
+} */ 
 #comment {
     resize: none;
     padding: 8px 16px;
@@ -150,7 +184,7 @@ color: var(--button-color)
 }
 
 .modal-headline {
-    margin-bottom: 14px;
+    margin-bottom: 34px;
     font-weight: 700;
     color: var(--brand-color);
     text-align: center;
@@ -673,20 +707,30 @@ line-height: 2;
     height: 40px;
 }
 .btn-ctnr {
+    position: relative;
     margin-left: 24px;
     padding-top: 42px;
 
+}
+.footer-svg {
+    position: absolute;
+    bottom: 15px;
+    right: 24px;
+
+}
+.send-svg {
+fill: var(--background-color);
 }
 .ftr-hdln {
     display: none;
 }
 .footer-button {
+    position: relative;
+    width: 164px;
     height: 40px;
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding-top: 8px;
     padding-left: 24px;
     background-color: var(--button-color);
