@@ -122,9 +122,10 @@ fill: currentColor;
     fill: var(--button-color);
 }
 .form-field {
-
 }
-
+.check {
+    appearance: none;
+}
 .form-container {
     position: relative;
 }
@@ -149,6 +150,7 @@ fill: currentColor;
 .modal-text [type="checkbox"] {
 color: var(--button-color)
 }
+
 .form-field input::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
@@ -214,6 +216,27 @@ color: var(--button-color)
 }
 .link-modal:visited {
     color: var(--button-color);
+}
+.checkbox {
+    -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+}
+.custom-check {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid var(--brand-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-top: 16px;
+}
+.checkbox:checked + .custom-check {
+    border: var(--button-color);
+    background-color: var(--button-color);
+    background-image: url(/icons.svg/Property\ 1=click.svg);
+    background-size: contain;
+    background-origin: border-box;
 }
 .send-container {
     width: 105px;
