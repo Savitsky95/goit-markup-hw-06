@@ -196,7 +196,6 @@ color: var(--button-color)
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: #757575;
-    margin-bottom: 24px;
     padding-left: 24px;
 }
 .send-button {
@@ -273,7 +272,6 @@ color: var(--button-color)
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     border-radius: 4px;
     border: 0;
-    margin-top: 24px;
     margin-left: auto;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
