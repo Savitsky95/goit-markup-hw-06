@@ -153,17 +153,21 @@ color: var(--button-color)
     color: rgba(117, 117, 117, 0.5);
 }
 .form-input {
+    margin-top: 4px;
     margin-bottom: 8px;
     width: 360px;
     height: 40px;
     padding-left: 38px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-            border-radius: 4px;
-            line-height: 1.3;
-            font-size: 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    line-height: 1.3;
+    font-size: 12px;
 }
 .form-name {
     position: relative;
+}
+.form-name input:focus {
+    outline: 1px solid var(--button-color);
 }
 #comment {
     resize: none;
@@ -174,8 +178,11 @@ color: var(--button-color)
     border-radius: 4px;
     line-height: 1.3;
     font-size: 12px;
+    margin-top: 4px;
 }
-
+#comment:focus {
+    outline: 1px solid var(--button-color);
+}
 .modal-headline {
     margin-bottom: 14px;
     font-weight: 700;
@@ -186,7 +193,8 @@ color: var(--button-color)
     letter-spacing: 0.04em;
     font-size: 12px;
     line-height: 1.3; 
-    color: var(--modal-color);  
+    color: var(--modal-color);
+    
 }
 .modal-text {
     position: relative;
@@ -401,6 +409,7 @@ transform: translateY(0);
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 8px;
+    color: var(--brand-color);
 }
 .description-container {
     border: 0.5px solid var(--white);
@@ -413,6 +422,7 @@ transform: translateY(0);
 .description {
     font-weight: 400;
     font-size: 16px;
+    color: #434455;
 }
 .header {
     padding-top: 24px;
