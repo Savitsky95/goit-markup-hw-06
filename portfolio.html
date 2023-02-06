@@ -245,17 +245,16 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <p class="footer-field">
-                    <label for="email" class="text-area-footer">
+            <div class="subscribe-container">
+                <p class="footer-field">Subscribe</p>
+                <form class="subscribe-input-container" autocomplete="off">
+                    <label> <input type="email" name="email" id="footer-mail" placeholder="E-mail" /> </label>
+                    <button type="button" class="footer-button">
                         Subscribe
-                    </label>
-                    <br>
-                    <input type="email" name="email" id="footer-mail" placeholder="E-mail" />
-                </p>
-            </div>
-            <div class="btn-ctnr">
-                <button type="button" class="footer-button">Subscribe</button>
+                        <svg width="24" height="20" class="send-svg">
+                            <use href="icons.svg/symbol-defs.svg#icon-send"> </use>
+                        </svg>
+                    </button>
             </div>
         </div>
     </footer>
